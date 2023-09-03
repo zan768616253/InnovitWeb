@@ -1,0 +1,60 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.navbar-brand {
+  margin-right: 0.5rem;
+}
+
+.navbar-icon {
+  height: 20px
+}
+
+#about-us .right ul li .question {
+  color: var(--primary-blue);
+  font-size: 24px;
+  padding: 2rem 0;
+  font-weight: 600;
+  border-top: 1px solid rgba(0, 15, 161, 0.1);
+  cursor: pointer;
+}
+
+#about-us .right ul li img {
+  float: right;
+  width: 25px;
+}
+
+#about-us .right ul li .anwser {
+  margin-bottom: 1rem;
+}
+
+.module-title h2 {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}

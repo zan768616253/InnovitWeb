@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>InnovIt Academy</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">InnovIt Academy</a>
+      <img src="img/logo-icon.png" class="navbar-icon" alt="logo" id="logo-icon">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">What You'll Learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#questions" class="nav-link">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link">Instructors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Become a <span class="text-warning"> Developer </span></h1>
+          <p class="lead my-4">
+            开启你的IT高薪职业生涯
+          </p>
+          <p class="lead my-4">
+            加入课程，投资您的未来
+          </p>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+            了解更多
+          </button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <!-- <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+          <button class="btn btn-dark btn-lg" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="about-us" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>关于我们</h2>
+          <p class="lead">
+            InnovIt Academy 专为毕业生和新移民打造的IT求职培训宝库。不仅掌握澳新市场最炙手可热的IT技术，还将助你攀登高薪岗位的阶梯！我们深谙行业需求，提供最新资讯，助你升级技能、积累本土工作经验。
+          </p>
+          <p class="lead">
+            为您开启独一无二的1对1定制培训之旅！我们不是普通的培训机构，而是为您量身定制的个性化教育导师。一旦加入我们的课程，您将拥有自己的专属课程导师，贴心制定培训计划，为您提供精心打造的专业培训服务。就像有一个私人导师为您开启技能进阶之路，只为满足您的独特需求。快来加入我们，探索您个人成长的全新篇章！
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+        <div class="col-md right">
+          <ul>
+            <li>
+              <div class="question" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="true">
+                打造独一无二的一对一的培训 <img src="/img/icons/red-arrow.png" alt="plus">
+              </div>
+              <div class="anwser collapse show" id="collapse1" style="">
+
+                解锁IT世界，照亮您的求职之路！无论您是IT新手还是项目经验不足，不论您是全职学习还是兼职学习，我们都为您量身打造个性化培训计划。有着个人培训导师的陪伴，让您以最适合、最迅捷的方式实现求职目标。让我们一同冲破技能瓶颈，抵达成功的彼岸！
+              </div>
+            </li>
+            <li>
+              <div class="question" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="true">
+                就业保障 <img src="/img/icons/red-arrow.png" alt="plus">
+              </div>
+              <div class="anwser collapse show" id="collapse2" style="">
+                InnovIt
+                Academy是新西兰唯一一家基于就业工资来收取学费的培训机构，只有您的成功才是我们的成功，我们会以最大努力的帮助您踏入IT职场，包括：培训、内推、面试辅导，这同时也体现我们对我们课程和教学体系充分自信。
+              </div>
+            </li>
+            <li>
+              <div class="question" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="true">
+                提供灵活而宽松的学习时间 <img src="/img/icons/red-arrow.png" alt="plus">
+              </div>
+              <div class="anwser collapse show" id="collapse1" style="">
+
+                我们不仅提供全日制课程也提供夜校课程，灵活安排学习时间，让您无需辞职，不用等待假期，毫无后顾之忧。而且，我们为您配备专职老师，随时解答疑惑，让您畅享学习的快乐旅程。不再局限于白天，让夜晚成为您掌握技能的璀璨时刻！
+              </div>
+            </li>
+            <li>
+              <div class="question" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="true">
+                项目主导，学习领航 <img src="/img/icons/red-arrow.png" alt="plus">
+              </div>
+              <div class="anwser collapse show" id="collapse3" style="">
+                实战培训，跨越就业门槛！我们不仅教授理论知识，更让您参与本地实际商业项目。由架构师和高级程序员带领，助您轻松踏入高薪职场！ </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="learn" class="p-5" style="background-color: #f7f7f7;">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="img/curriculum.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Module -->
+  <section class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between module-title">
+        <h2>个性化学习</h2>
+        <p class="lead">
+          我们提供三个学习模块，包括Lecture + Lab（理论授课与实践实验），商业项目实战以及面试辅导。学员可以根据自身需求和背景，选择其中个别模块进行学习，从而大大降低学习门槛和成本。
+        </p>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3">Lecture + Lab</h3>
+              <p class="card-text">
+                通过理论与实践相结合的方式，帮助学员掌握并应用所学的技术。通过系统的学习和实际操作，帮助学员打下坚实的基础
+              </p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">商业项目实战</h3>
+              <p class="card-text">
+                参加实习，在工作中学习。作为开发人员获得真正的商业经验，并与其他本地开发人员建立联系。还有大量付费开发机会
+              </p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">CV，面试</h3>
+              <p class="card-text">
+                为您的简历、面试模拟和有针对性的面试咨询提供专业帮助。我们确保您可以获得更多机会并在面试中脱颖而出
+              </p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Sections -->
+  <section id="learn" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h2>Learn The Fundamentals</h2>
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Similique deleniti possimus magnam corporis ratione facere!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+            reiciendis eius autem eveniet mollitia, at asperiores suscipit
+            quae similique laboriosam iste minus placeat odit velit quos,
+            nulla architecto amet voluptates?
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  <section id="learn" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Work on Project</h2>
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Similique deleniti possimus magnam corporis ratione facere!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+            reiciendis eius autem eveniet mollitia, at asperiores suscipit
+            quae similique laboriosam iste minus placeat odit velit quos,
+            nulla architecto amet voluptates?
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="img/react.svg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- Question Accordion
+  <section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-one">
+              Where exactly are you located?
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-two">
+              How much does it cost to attend?
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-three">
+              What do I need to Know?
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-four">
+              How Do I sign up?
+            </button>
+          </h2>
+          <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-five">
+              Do you help me find a job?
+            </button>
+          </h2>
+          <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section id="instructors" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white">Our Instructors</h2>
+      <p class="lead text-center text-white mb-5">
+        Our instructors all have 5+ years working as a web developer in the
+        industry
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="" />
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="" />
+              <h3 class="card-title mb-3">Jane Doe</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="" />
+              <h3 class="card-title mb-3">Steve Smith</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="" />
+              <h3 class="card-title mb-3">Sara Smith</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact & Map -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Albany, Auckland, New Zealand
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Student Phone:</span> (+64) 211377360
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Enrollment Email:</span> (555)
+              enrollment@innovIt.ai
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Student Email:</span>
+              student@innovIt.ai
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container footer">
+      <div class="row g-4 footer-content">
+        <div class="col-md">
+          <p class="font-semibold text-sm text-justify leading-6 mb-4">NEXT Academy is a software engineering school
+            that trains world class junior developers in
+            Southeast Asia. We have a mobile presence in Singapore 🇸🇬 and a semi-permanent presence in
+            Malaysia 🇲🇾.</p>
+          <p class="font-semibold text-sm text-justify leading-6 mb-4">NEXT Academy is a software engineering school
+            that trains world class junior developers in
+            Southeast Asia. We have a mobile presence in Singapore 🇸🇬 and a semi-permanent presence in
+            Malaysia 🇲🇾.</p>
+        </div>
+        <div class="col-md">
+          <div class="basis-1/3 flex flex-col space-y-2">
+            <h5 class="font-bold">InnovIt Academy</h5>
+            <a href="/our-commitment">About Us</a>
+            <a href="/blog">Blog</a>
+            <a href="/press-and-media">Press &amp; Media</a>
+            <a href="/tnc/privacy-policy">Privacy Policy</a>
+            <a href="/tnc/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 footer-end">
+        <p class="lead">Copyright &copy; 2023 InnovIt Academy</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [174.7084, -36.7286],
+      zoom: 13,
+    })
+  </script>
+</body>
+
+</html>
